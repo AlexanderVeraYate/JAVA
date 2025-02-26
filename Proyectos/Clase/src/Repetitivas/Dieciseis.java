@@ -1,6 +1,5 @@
 package Repetitivas;
 
-
 import java.util.Scanner;
 
 public class Dieciseis {
@@ -10,8 +9,8 @@ public class Dieciseis {
 
         int limon = 2500, nuez = 2800, lulo = 2600, fresa = 2000, crema = 3000;
         int Indicador = 0, facturas = 0;
-        int Cantidad_Limon = 0, Cantidad_nuez = 0, Cantidad_Lulo = 0, Cantidad_Fresa = 0, Cantidad_Crema = 0;
-        int Cantidad_Total_limon = 0, Cantidad_Total_nuez = 0, Cantidad_Total_lulo = 0, Cantidad_Total_fresa = 0, Cantidad_Total_crema = 0;
+        int CantidadLimon = 0, CantidadNuez = 0, CantidadLulo = 0, CantidadFresa = 0, CantidadCrema = 0;
+        int CantidadTotalLimon = 0, CantidadTotalNuez = 0, CantidadTotalLulo = 0, CantidadTotalFresa = 0, CantidadTotalCrema = 0;
 
         do {
             facturas++;
@@ -32,36 +31,36 @@ public class Dieciseis {
                     System.out.print("cuanta cantidad va a escoger: ");
                     int Cantidad = Entrada.nextInt();
                     Entrada.nextLine();
-                    Cantidad_Limon = Cantidad * limon;
-                    Cantidad_Total_limon = Cantidad_Limon + Cantidad_Total_limon;
+                    CantidadLimon = Cantidad * limon;
+                    CantidadTotalLimon = CantidadLimon + CantidadTotalLimon;
                     break;
                 case 2:
                     System.out.print("cuanta cantidad va a escoger: ");
                     Cantidad = Entrada.nextInt();
                     Entrada.nextLine();
-                    Cantidad_nuez = Cantidad * nuez;
-                    Cantidad_Total_nuez = Cantidad_nuez + Cantidad_Total_nuez;
+                    CantidadNuez = Cantidad * nuez;
+                    CantidadTotalNuez = CantidadNuez + CantidadTotalNuez;
                     break;
                 case 3:
                     System.out.print("cuanta cantidad va a escoger: ");
                     Cantidad = Entrada.nextInt();
                     Entrada.nextLine();
-                    Cantidad_Lulo = Cantidad * lulo;
-                    Cantidad_Total_lulo = Cantidad_Lulo + Cantidad_Total_lulo;
+                    CantidadLulo = Cantidad * lulo;
+                    CantidadTotalLulo = CantidadLulo + CantidadTotalLulo;
                     break;
                 case 4:
                     System.out.print("cuanta cantidad va a escoger: ");
                     Cantidad = Entrada.nextInt();
                     Entrada.nextLine();
-                    Cantidad_Fresa = Cantidad * fresa;
-                    Cantidad_Total_fresa = Cantidad_Fresa + Cantidad_Total_fresa;
+                    CantidadFresa = Cantidad * fresa;
+                    CantidadTotalFresa = CantidadFresa + CantidadTotalFresa;
                     break;
                 case 5:
                     System.out.print("cuanta cantidad va a escoger: ");
                     Cantidad = Entrada.nextInt();
                     Entrada.nextLine();
-                    Cantidad_Crema = Cantidad * crema;
-                    Cantidad_Total_crema = Cantidad_Crema + Cantidad_Total_crema;
+                    CantidadCrema = Cantidad * crema;
+                    CantidadTotalCrema = CantidadCrema + CantidadTotalCrema;
                     break;
                 default:
                     System.out.println("Error 404 Seleccion incorrecta");
@@ -72,11 +71,11 @@ public class Dieciseis {
             Indicador = Entrada.nextInt();
         } while (Indicador == 1);
         System.out.println("_________Resultados_________");
-        System.out.println("El total de Limon fue: " + Cantidad_Total_limon + " y se vendieron: " + (Cantidad_Total_limon / limon));
-        System.out.println("El total de Nuez fue: " + Cantidad_Total_nuez + " y se vendieron: " + (Cantidad_Total_nuez / nuez));
-        System.out.println("El total de Lulo fue: " + Cantidad_Total_lulo + " y se vendieron: " + (Cantidad_Total_lulo / lulo));
-        System.out.println("El total de Fresa fue: " + Cantidad_Total_fresa + " y se vendieron: " + (Cantidad_Total_fresa / fresa));
-        System.out.println("El total de Crema fue: " + Cantidad_Total_crema + " y se vendieron: " + (Cantidad_Total_crema / crema));
+        System.out.println("El total de Limon fue: " + CantidadTotalLimon + " y se vendieron: " + (CantidadTotalLimon / limon));
+        System.out.println("El total de Nuez fue: " + CantidadTotalNuez + " y se vendieron: " + (CantidadTotalNuez / nuez));
+        System.out.println("El total de Lulo fue: " + CantidadTotalLulo + " y se vendieron: " + (CantidadTotalLulo / lulo));
+        System.out.println("El total de Fresa fue: " + CantidadTotalFresa + " y se vendieron: " + (CantidadTotalFresa / fresa));
+        System.out.println("El total de Crema fue: " + CantidadTotalCrema + " y se vendieron: " + (CantidadTotalCrema / crema));
 
         System.out.println("_________saliste del programa______");
         System.out.println("Hiciste " + facturas + " facturas");
